@@ -1,0 +1,40 @@
+{
+  "name": "opencode-recycle-only",
+  "version": "0.1.0",
+  "description": "OpenCode V2 plugin that blocks permanent deletes and moves nothing itself.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "safety",
+    "delete",
+    "recycle-bin",
+    "trash",
+    "guard"
+  ],
+  "license": "MIT",
+  "author": "FangZhangTNS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FangZhangTNS/opencode-recycle-only.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test src/matcher.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.0.29"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
